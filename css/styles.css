@@ -10,7 +10,7 @@
     width: 80%;
     display: grid;
     gap: 1.5em;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));    
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));    
     margin-left: auto;
     margin-right: auto;
 }
@@ -19,11 +19,18 @@
     background-color: #fff;
     border: 2px solid var(--bordes);
     border-radius: .5em;
+    overflow: hidden;
 }
 
 .card-img img{
     width: 100%;
     border-radius: .5em .5em 0 0;
+}
+
+.card-img img:hover{
+    transition: all .3s ease-in-out;
+    transform: scale(1.2);
+    transition: transform .5s;
 }
 
 .card-content{
