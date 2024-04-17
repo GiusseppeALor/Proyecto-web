@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Poppins:wght@400;700;900&family=Roboto&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/matricula.css">
 
 </head>
 <body>
@@ -18,44 +18,34 @@
     <article class="container">
         <section class="row">
             <section class="col-xs-12 col-sm-12 col-md-8">
-                <i class="fa-solid fa-book"></i>
+                <i class="fa-solid fa-book fa-2x"></i>
                 <h1 class="titulo">Acerca <span class="titulo2">del Programa</span> </h1>
                 <p class="parrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium quis, possimus vero suscipit, culpa cumque ipsum, nostrum veritatis quod dignissimos nam eos in quo distinctio error quidem eveniet earum excepturi!</p>
-
+                
                 <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident accusantium sunt, nobis, ut tenetur fugit animi quae in rem voluptas explicabo vitae, veritatis quas quis omnis commodi vel repellat cupiditate!</p>
 
-                <i class="fa-solid fa-user-tie"></i>
+                <i class="fa-solid fa-user-tie fa-2x"></i>
                 <h1 class="titulo">Campo <span class="titulo2">Laboral</span> </h1>
                 <p class="parrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium quis, possimus vero suscipit, culpa cumque ipsum, nostrum veritatis quod dignissimos nam eos in quo distinctio error quidem eveniet earum excepturi!</p>
 
             </section>
             <section class="col-xs-12 col-sm-12 col-md-4">
-
-                <!-- Agregar franja amarilla Matricula Gratis! -->
-
-                <form action="enviar.php" method="post">
-                    <h1 class="titulo-form">Solicita más información aquí</h1>
-                    <input type="text" name="nombres" placeholder="Nombres" required></input>
-                    <input type="text" name="apellidos" placeholder="Apellidos" required></input>
-                    <input type="email" name="email" placeholder="Correo electrónico" required></input>
-                    <input type="tel" name="telefono" placeholder="Teléfono/celular" required></input>
-                    <input type="checkbox">Acepto haber leído las políticas de privacidad y los términos y condiciones
-                    <input type="submit" value="Solicitar">
-                    
+                <form class="formulario" action="enviar.php" method="post">
+                    <h1 class="titulo-amarillo">¡Matrícula Gratis!</h1>
+                    <h3>Solicita más información aquí:</h3>
+                    <input class="input-texto" type="text" name="nombres" placeholder="Nombres" required>
+                    <input class="input-texto" type="text" name="apellidos" placeholder="Apellidos" required>
+                    <input class="input-texto" type="email" name="email" placeholder="Correo electrónico" required>
+                    <input class="input-texto" type="tel" name="telefono" placeholder="Teléfono/celular" required>
+                    <input class="input-check" type="checkbox" required> Acepto haber leído las políticas de privacidad y brlos términos y condiciones <br>
+                    <input class="boton" type="submit" value="Solicitar">
                 </form>
-
-
-
-
-                
             </section>
         </section>
     </article>
 
-    <!-- Aplicar diplay inline en el h1 en css -->
-    <!-- Anchura de figma el ancho tiene que ser 1920 -->
-
+    <!-- Aplicar display inline en el h1 en css -->
     <!-- Fin de sistema de rejillas -->
-
+    <!-- Anchura de figma tiene que ser 1920 -->
 </body>
 </html>
